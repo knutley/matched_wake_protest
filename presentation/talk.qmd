@@ -1,6 +1,6 @@
 ---
-title: "Does Partisan Bias Become Institutionalised?"
-subtitle: "Repeated exposure and the policing of right-coded protest"
+title: "Does Partisan Asymmetry Persist?"
+subtitle: "A Matched Wake Analysis of Protest Policing in Liberal Democracies"
 author: "Katelyn Nutley"
 institute: "Harvard University · University of St Andrews"
 format:
@@ -21,7 +21,8 @@ format:
 - So the asymmetry sits **upstream**, in where forces send officers
 
 ::: {.small}
-Nutley (2026), five Western European democracies, 2020–2024
+Nutley (2026), Who Is Spared? Selective Non-Securitisation and the Partisan Policing of
+Protest in Western Europe, 2020–2024
 :::
 
 ## The question
