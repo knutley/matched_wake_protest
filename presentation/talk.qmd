@@ -14,16 +14,23 @@ format:
     pdf-separate-fragments: false
 ---
 
-## The puzzle
+## First Paper's Set-Up
 
-- Right-coded protests have about **20% lower odds** of police attending than comparable left-coded protests
-- Police conduct *once present* does not differ by partisanship
-- So the asymmetry sits **upstream**, in where forces send officers
+- Scope: DE, ES, FR, IT & UK (2020-2024)
+- Data: ACLED protest data with group partisanship and police response coded w/ NLP of actor and text fields
+- Methods: Heckman correction applied to separate deployment/attendance from conduct, logistic regression
+- 
 
 ::: {.small}
 Nutley (2026), Who Is Spared? Selective Non-Securitisation and the Partisan Policing of
 Protest in Western Europe, 2020–2024
 :::
+
+## First Paper's Findings
+
+- Right-coded protests have about **20% lower odds** of police attending than comparable left-coded protests
+- Police conduct *once present* does not differ by partisanship
+- So the asymmetry sits **upstream**, in where forces send officers
 
 ## The question
 
