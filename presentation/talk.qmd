@@ -16,30 +16,54 @@ format:
 
 ## Two-Tier Policing
 
-::: {layout-ncol=2} 
+::: {#fig-twotier layout-ncol=2} 
 
-![Corbyn at PSC protest](images/corbyn_psc.jpg) 
+![Corbyn at PSC protest](images/corbyn_psc.jpg)
+
 ![Nigel Farage's tweets](images/farage.jpg)
 
 :::
 
-Prevailing narratives across liberal democracies of 'two-tier' policing systems; i.e., that some groups are policed comparatively more than their counterparts. These claims are not new, i.e., policing of Communists in post-war Italy, suppression of BLM in the United States, stop-and-search procedures in FL based on police partisanship. 
+'Two-tier' policing systems; i.e., where some groups are policed comparatively more than their counterparts. 
 
-$\rightarrow$ All differential policing claims hinge on claim of excess -- one side arrested, harassed, or faces worse sentencing than the other.  
+## Differential Policing 
+\
+These claims are not new, i.e., policing of Communists in post-war Italy, suppression of BLM in the United States, stop-and-search procedures in FL based on police partisanship. 
 
-## Selective Non-Securitisation
+\
 
-Upending the rule of law so visibly is a risky strategy for democracies/ those tasked with maintaining public order. Arguably, same results or intended asymmetry can be achieved with selective leniency. 
+$\rightarrow$ All differential policing claims hinge on expectation of excess -- one side arrested, harassed, or faces worse sentencing than the other.  
 
-In the literature, routinised securitisation (Bigo 2002) is treated as a factual (the positive case), but its absence (the counterfactual) is treated as a pre-treatment baseline. This is not a fair assumption to make, moreover, in other sub-disciplines of political science, leniency is often considered a viable political strategy. So, I suggest selective non-securitisation. 
+## The Security Logic of Differential Policing 
+\
+Differential policing, broadly understood, is the securitisation of one group comparative
+to another. The literature stresses that this is a routinised process where the behaviour
+of securitising actors -- border control agents, police officers, traffic wardens, etc. --
+creates a path dependency or an institutional posture (Bigo 2002). 
+
+
+## The Disconnect in Democracy
+\
+Upending the rule of law so publicly is a risky strategy. The same asymmetry could be 
+achieved with a sort of discriminatory leniency, which is considered a viable strategy 
+in other political science research (Miller 2009; Holland 2016).
+
+\
+
+*Curiously,* there is no parallel in securitisation literature. There is the factual (the
+positive case), its easement, but not the counterfactual (the negative case). Where absence is treated, it's assumed to be akin to a pre-treatment baseline. But, **there is a different between never treated and as of yet treated.**
 
 ## First Paper's Set-Up
 
+**Research Question:** Does partisanship impact police response in Western liberal democracy? 
+
+\
+
 - Scope: DE, ES, FR, IT & UK (2020-2024)
-- Data: ACLED protest data (NLP of actors and text fields) 
+- Data: ACLED protest data (NLP of text fields for actors and police response) 
       - IV: group partisanship (multi-stage classification w/ BART used for residuals)
       - DV: police response, disaggregated into deployment and coduct (more spec. arrest and brutality) (RoBERTa classification)
-      - Controls: weekend dummy, protestor violence, disruption (proximity to major street via OSM), visibility (proximity to gov't               building via OSM), Country FE, Year FE 
+- Controls: weekend dummy, protestor violence, disruption (proximity to major street via OSM), visibility (proximity to gov't building via OSM), Country FE, Year FE 
 - Methods: Heckman correction applied to separate deployment/attendance from conduct, logistic regression
 
 ::: {.small}
@@ -48,30 +72,48 @@ Protest in Western Europe, 2020–2024
 :::
 
 ## First Paper's Findings
-
+\
 - Right-coded protests have about **20% lower odds** of police attending than left-coded protests
 - Police conduct *once present* does not differ by partisanship
 - So the asymmetry sits **upstream**, in where forces send officers
 
-Strong suggestion that selective non-securitisation is occurring. 
+\
 
-## The question
+Runs counter to policing literature -- assumes excess that occurs at conduct-level. Strong suggestion that selective non-securitisation is occurring. 
 
-Is that gap fixed, or does it change as forces respond to repeated mobilisation?
+## Gap and Theory 
+\
 
-. . .
+Is that asymmetry fixed, or does it change as forces respond to repeated mobilisation?
+:::{.small} Is this something we see with discrete events or is there a pattern?
 
-- **H1 Persistence:** the gap persists or widens
-- **H2 Learning:** the gap narrows towards zero
-- **H3 Selective non-securitisation:** the gap runs through *reduced* attention after right-coded protest, not only heightened attention after left-coded protest
+\
 
-## Data
+Given Paper 1's finding, we assume that police response (deployment) is plausibly a punctuated process where threat assessments hold constant between encounters and are updated when police have contact with a mobilising group. 
 
-- 106,446 ACLED protest events: France, Germany, Italy, Spain, UK, 2020–2024
-- Partisanship: five-step classification (7,987 right-only, 39,246 left-only events)
-- Police presence: RoBERTa classifier on event descriptions (3.96% of events)
+## Expectations 
+\
 
-## Matched wake analysis {background-iframe="index.html" background-interactive="true"}
+- **Under-policing:** offers fewer opportunities for threat revision, leaving low-threat risk assessments in place
+- **Over-policing:** offers ample opportunity for threat revision, change over time
+
+\ 
+
+*Nota Bene:* Under-policing and non-securitisation are linked; as are over-policing and securitisation
+
+## Matched Wake Analysis Explainer
+
+Protests differ in many ways at once, so raw comparisons mislead.
+
+\
+
+- Pair each right-coded protest with a left-coded protest that looks the same on
+  observed features (country, year, weekend, location, protest load)
+- Compare what happens **in the wake** of each: police attendance at nearby
+  protests over the following days and weeks
+- Differences are not explained by those observed features
+
+## {background-iframe="index.html" background-interactive="true"}
 
 <!-- The interactive UK example fills this slide. Click into it to use the controls;
      press Esc or click outside to return to slide navigation. -->
