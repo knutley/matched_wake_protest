@@ -18,8 +18,8 @@ format:
 
 ::: {layout-ncol=2} 
 
-![Corbyn at PSC protest](images/corbyn_psc.jpeg) 
-![Nigel Farage's tweets](images/farage.jpeg)
+![Corbyn at PSC protest](images/corbyn_psc.jpg) 
+![Nigel Farage's tweets](images/farage.jpg)
 
 :::
 
