@@ -34,6 +34,7 @@ jobs:
           cp presentation/index.html presentation/talk.html _site/
           cp -r presentation/talk_files _site/ 2>/dev/null || true
           cp -r presentation/figures _site/ 2>/dev/null || true
+          cp -r presentation/images _site/
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v5
