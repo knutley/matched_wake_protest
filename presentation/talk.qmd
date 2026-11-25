@@ -217,7 +217,7 @@ One caveat: unclassified follow-ups are policed somewhat less at 3–4 weeks.
 - **Cross-jurisdiction matching** (similar forces, same country): gap ≈ 0
 - **Border design**: not feasible (only 40–140 matched protests near borders)
 - **Excluding government-only labels** (1,393 protests): unchanged; 4 weeks, 4 km = −19.8% (p = 0.03)
-- **Placebo**: no pre-period difference (1 of 20 cells, as expected by chance)
+- **Placebo**: no pre-period difference (0 of 16 cells, as expected by chance)
 - **Disruption**: matching on distance to a major road leaves estimates unchanged
 
 ## Implications
